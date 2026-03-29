@@ -7,6 +7,8 @@ const content = {
     lang: 'English',
     nav: 'AR',
     brand: 'استراتيجية إدارة العمليات',
+    summaryTitle: 'الملخص التنفيذي',
+    summaryText: 'من خلال تنفيذ هذه الاستراتيجية، سنقوم بتحويل كل موظف إلى ما يعادل ٥ موظفين في موظف واحد. سنعمل على تعظيم الأرباح في المواقع الحالية ونكون مستعدين للتوسع في مشاريع جديدة بنظام محسن تم تصميمه لتحقيق أقصى قدر من الكفاءة والعائد على الاستثمار.',
     title: 'خارطة طريق التحول الرقمي والذكاء الاصطناعي',
     subtitle: 'استراتيجية شاملة لـ ٣٠ فرعاً في المدينة المنورة - مجموعة مجوهرات الرفاهية',
     pillars: [
@@ -90,6 +92,8 @@ const content = {
     lang: 'العربية',
     nav: 'EN',
     brand: 'OPERATIONS MANAGEMENT STRATEGY',
+    summaryTitle: 'Executive Summary',
+    summaryText: 'By executing this strategy we will turn every employee into 5 employees in one. We will maximize profits in current locations and be ready for expansion into new ventures with an optimized system that’s been crafted for maximum efficiency and return on investment.',
     title: 'AI & Digital Transformation Roadmap',
     subtitle: 'Strategic Overhaul for 30+ Madinah Storefronts - Luxury Jewelry Group',
     pillars: [
@@ -195,9 +199,20 @@ export default function PresentationPage() {
     },
     hero: {
       textAlign: 'center',
-      padding: '80px 5%',
+      padding: '80px 5% 40px',
       maxWidth: '1200px',
       margin: '0 auto'
+    },
+    summaryBox: {
+      backgroundColor: 'rgba(197, 160, 89, 0.1)',
+      border: '1px solid #c5a059',
+      borderRadius: '24px',
+      padding: '40px',
+      margin: '0 5% 60px',
+      maxWidth: '1200px',
+      marginLeft: 'auto',
+      marginRight: 'auto',
+      boxShadow: '0 20px 40px rgba(0,0,0,0.3)'
     },
     title: {
       fontSize: 'clamp(2.5rem, 5vw, 4.5rem)',
@@ -266,6 +281,13 @@ export default function PresentationPage() {
         <p style={{fontSize: '1.4rem', color: '#94a3b8', maxWidth: '800px', margin: '0 auto'}}>{t.subtitle}</p>
       </header>
 
+      <div style={styles.summaryBox}>
+        <h2 style={{color: '#c5a059', marginBottom: '20px', fontSize: '2rem'}}>{t.summaryTitle}</h2>
+        <p style={{fontSize: '1.5rem', lineHeight: 1.6, color: 'white', fontWeight: '500'}}>
+          {t.summaryText}
+        </p>
+      </div>
+
       <div style={styles.grid}>
         {t.pillars.map((p: any) => (
           <div key={p.id} style={styles.card}>
@@ -303,7 +325,7 @@ export default function PresentationPage() {
       </div>
 
       <footer style={{textAlign: 'center', marginTop: '80px', color: '#64748b'}}>
-        &copy; 2026 REMAT STRATEGIC SOLUTIONS | MADINAH RETAIL GROUP | VERSION 1.8
+        &copy; 2026 REMAT STRATEGIC SOLUTIONS | MADINAH RETAIL GROUP | VERSION 2.0
       </footer>
     </div>
   );
