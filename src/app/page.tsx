@@ -40,49 +40,66 @@ export default function PresentationPage() {
   const [lang, setLang] = useState('ar');
   const t = content[lang];
 
+  const styles = {
+    container: {
+      minHeight: '100-vh',
+      backgroundColor: '#001a33',
+      color: 'white',
+      fontFamily: 'sans-serif',
+      padding: '20px'
+    },
+    nav: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      padding: '20px'
+    },
+    title: {
+      fontSize: '2.5rem',
+      fontWeight: 'bold',
+      color: '#c5a059',
+      textAlign: 'center'
+    },
+    grid: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+      gap: '20px',
+      marginTop: '40px'
+    },
+    card: {
+      backgroundColor: '#002b52',
+      padding: '20px',
+      borderRadius: '15px',
+      border: '1px solid #c5a059'
+    }
+  };
+
   return (
-    <div dir={t.dir} className="min-h-screen bg-[#001a33] text-white font-sans">
-      <nav className="p-6 flex justify-between items-center max-w-7xl mx-auto">
-        <div className="text-2xl font-black tracking-tighter text-[#c5a059]">REMAT<span className="text-white">CONSULTING</span></div>
+    <div dir={t.dir} style={styles.container}>
+      <nav style={styles.nav}>
+        <div style={{fontWeight: '900', color: '#c5a059'}}>REMAT CONSULTING</div>
         <button 
           onClick={() => setLang(lang === 'ar' ? 'en' : 'ar')}
-          className="border border-[#c5a059] px-4 py-2 rounded-full hover:bg-[#c5a059] hover:text-[#001a33] transition-all font-bold"
+          style={{backgroundColor: '#c5a059', color: '#001a33', padding: '10px 20px', borderRadius: '20px', border: 'none', cursor: 'pointer'}}
         >
           {t.lang}
         </button>
       </nav>
 
-      <header className="py-20 px-6 text-center max-w-4xl mx-auto">
-        <div className="inline-block bg-[#c5a059] bg-opacity-10 text-[#c5a059] px-4 py-1 rounded-full text-sm font-bold mb-6 tracking-widest uppercase">
-          {t.vision}
-        </div>
-        <h1 className="text-5xl md:text-7xl font-extrabold mb-8 text-white leading-tight">
-          {t.title}
-        </h1>
-        <p className="text-xl md:text-2xl text-gray-400 mb-12">
-          {t.subtitle}
-        </p>
-        <button className="bg-[#c5a059] text-[#001a33] px-8 py-4 rounded-xl font-black text-lg hover:scale-105 transition-transform">
-          {t.cta}
-        </button>
-      </header>
+      <div style={{textAlign: 'center', marginTop: '60px'}}>
+        <h1 style={styles.title}>{t.title}</h1>
+        <p style={{fontSize: '1.2rem', color: '#ccc'}}>{t.subtitle}</p>
+      </div>
 
-      <section className="py-20 px-6 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {t.pillars.map((pillar) => (
-            <div key={pillar.id} className="bg-[#002b52] p-8 rounded-3xl border border-white border-opacity-5 hover:border-[#c5a059] hover:border-opacity-50 transition-all group relative overflow-hidden">
-              <div className="text-5xl mb-6 group-hover:scale-110 transition-transform">{pillar.icon}</div>
-              <h3 className="text-2xl font-bold mb-4 text-[#c5a059]">{pillar.title}</h3>
-              <p className="text-gray-400 leading-relaxed">{pillar.desc}</p>
-              <div className="absolute -bottom-10 -right-10 text-9xl text-white text-opacity-5 font-black group-hover:text-opacity-10 transition-all select-none">{pillar.id}</div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <footer className="py-12 px-6 border-t border-white border-opacity-5 text-center text-gray-500 text-sm">
-        &copy; 2026 REMAT STRATEGIC SOLUTIONS | MADINAH RETAIL GROUP | VERSION 1.2
-      </footer>
+      <div style={styles.grid}>
+        {t.pillars.map((p) => (
+          <div key={p.id} style={styles.card}>
+            <div style={{fontSize: '3rem'}}>{p.icon}</div>
+            <h3 style={{color: '#c5a059'}}>{p.title}</h3>
+            <p>{p.desc}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
