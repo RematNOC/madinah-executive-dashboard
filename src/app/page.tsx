@@ -16,8 +16,9 @@ const content = {
         id: 1, 
         title: 'المحاسبة المتكاملة (الذكاء المالي)', 
         desc: 'أتمتة الفواتير والمصروفات، التنبؤ بالتدفقات النقدية، والالتزام الكامل بالمرحلة الثانية من "زاتكا".', 
+        target: 'الهدف: تقليل إدخال البيانات اليدوي بنسبة ٧٠٪.',
         details: [
-          'أتمتة إدخال البيانات بنسبة ٧٠٪ باستخدام OCR.',
+          'أتمتة إدخال البيانات باستخدام تقنيات OCR.',
           'لوحات معلومات لحظية بدلاً من ملفات إكسل.',
           'الامتثال الكامل لمتطلبات هيئة الزكاة والدخل.'
         ],
@@ -27,6 +28,7 @@ const content = {
         id: 2, 
         title: 'الموارد البشرية الذكية (HR 2.0)', 
         desc: 'ربط نظام "اكتفاء" بأداء المبيعات والتنبؤ باحتياجات التوظيف وتسرب الموظفين.', 
+        target: 'الهدف: أتمتة تقييم الأداء بنسبة ١٠٠٪.',
         details: [
           'تحسين الجدولة الذكية لـ ٣٠ فرعاً.',
           'تحليلات التنبؤ بالاستقالات قبل حدوثها.',
@@ -38,10 +40,11 @@ const content = {
         id: 3, 
         title: 'إدارة المبيعات و الـ O2O', 
         desc: 'دمج التجارة الإلكترونية مع الفروع الفعلية وحل مشاكل الشحن عبر نموذج الاستلام من الفرع.', 
+        target: 'الهدف: تحويل ٢٠٪ من متصفحي الإنترنت إلى مشترين من الفرع.',
         details: [
           'نموذج "اشتري أونلاين واستلم من فرع المدينة".',
-          'التنبؤ بالطلب لكل صنف (SKU) لمنع النفاد.',
-          'تجارب قياس المجوهرات الافتراضية (VTO).'
+          'جمع بيانات العملاء (الهاتف/الإيميل) للمتابعة والبيع المستقبلي.',
+          'تنبؤ ذكي بالطلب لمنع نفاد المخزون بنسبة ٤٠٪.'
         ],
         icon: '💍' 
       },
@@ -49,10 +52,11 @@ const content = {
         id: 4, 
         title: 'استراتيجيات أداء المبيعات و KPIs', 
         desc: 'منهجية تحليلية لتعظيم الإيرادات وتحسين كفاءة الفروع باستخدام مؤشرات الأداء الرئيسية.', 
+        target: 'الهدف: زيادة متوسط قيمة الطلب (AOV) بنسبة ١٥٪.',
         details: [
-          'تتبع معدل التحويل (Conversion Rate) لكل فرع.',
-          'تحليل متوسط قيمة السلة (AOV) ورفعها عبر الـ Upselling.',
-          'لوحة مؤشرات أداء لحظية تربط الأهداف بالنتائج الفعلية.'
+          'تتبع معدل التحويل (Conversion Rate) لكل موظف.',
+          'استراتيجيات البيع الإضافي (Upselling) المدعومة بالبيانات.',
+          'لوحة مؤشرات أداء لحظية للأهداف المحققة.'
         ],
         icon: '📈' 
       },
@@ -60,6 +64,7 @@ const content = {
         id: 5, 
         title: 'تمكين فريق تقنية المعلومات', 
         desc: 'تدريب مكثف لمدة ٤ أشهر لتحويل القسم من دعم فني إلى وحدة ابتكار وذكاء اصطناعي.', 
+        target: 'الهدف: اكتفاء ذاتي تقني بنسبة ١٠٠٪.',
         details: [
           'إتقان هندسة الأوامر (Prompt Engineering).',
           'بناء أدوات أتمتة داخلية (n8n/Zapier).',
@@ -71,6 +76,7 @@ const content = {
         id: 6, 
         title: 'إدارة المهام الموحدة (Comms)', 
         desc: 'إنهاء فوضى الواتساب واستبدالها بنظام مهام مهيكل يضمن عدم ضياع أي تعليمات.', 
+        target: 'الهدف: تقليل المهام المفقودة إلى صفر٪.',
         details: [
           'موجز صباحي آلي لكل مدير فرع.',
           'تتبع المهام اليومية مع تقارير الإنجاز.',
@@ -79,6 +85,13 @@ const content = {
         icon: '✅' 
       }
     ],
+    governanceTitle: 'إدارة التغيير والتبني',
+    governanceItems: [
+      { title: 'سياسة "النظام هو الحقيقة"', desc: 'اعتبار نظام أودو المرجع الوحيد والنهائي للقرارات والتقارير.' },
+      { title: 'الحوافز المرتبطة بالأداء', desc: 'ربط المكافآت الشهرية بإكمال المهام وتحديث البيانات في النظام.' }
+    ],
+    expansionTitle: 'جاهزية التوسع المستقبلي',
+    expansionText: 'هذا النظام مصمم ليكون "البنية التحتية الأساسية" لنمو المجموعة. بعد نجاح نموذج المجوهرات، يمكن تعميم هذا النظام فوراً على قطاعات المقاهي، المطاعم، والفنادق التابعة للمجموعة لضمان وحدة الإدارة وجودة الأداء.',
     timeline: [
       { phase: 'المرحلة ١', task: 'التأسيس وربط الأنظمة (ZATCA)', date: 'الشهر ١' },
       { phase: 'المرحلة ٢', task: 'تفعيل الذكاء المالي والأتمتة', date: 'الشهر ٢-٣' },
@@ -101,9 +114,10 @@ const content = {
         id: 1, 
         title: 'Integrated AI Accounting', 
         desc: 'Automating invoices, predicting cash flow, and full ZATCA Phase 2 compliance.', 
+        target: 'Target: 70% reduction in manual data entry.',
         details: [
-          '70% reduction in data entry via OCR.',
-          'Real-time dashboards replacing Excel.',
+          'Automated data ingestion via OCR technology.',
+          'Real-time dashboards replacing Excel files.',
           'Full compliance with Zakat & Tax Authority.'
         ],
         icon: '📊' 
@@ -112,6 +126,7 @@ const content = {
         id: 2, 
         title: 'Smart HR Management', 
         desc: 'Linking Ektefa HRMS to sales performance and predicting staff attrition.', 
+        target: 'Target: 100% automated performance scoring.',
         details: [
           'Optimized scheduling for 30 locations.',
           'Predictive analytics for staff retention.',
@@ -123,10 +138,11 @@ const content = {
         id: 3, 
         title: 'O2O Sales & Inventory', 
         desc: 'Bridging E-commerce and physical stores via Click-and-Collect models.', 
+        target: 'Target: 20% conversion of online browsers to in-store buyers.',
         details: [
-          'Buy online, pickup in Madinah branch.',
-          'SKU-level demand forecasting.',
-          'Virtual Try-On (VTO) integration.'
+          'Buy online, pickup in Madinah branch model.',
+          'Capture contact info for follow-ups and future sales tactics.',
+          'Predictive demand forecasting to cut stockouts by 40%.'
         ],
         icon: '💍' 
       },
@@ -134,9 +150,10 @@ const content = {
         id: 4, 
         title: 'Sales Performance & KPIs', 
         desc: 'Analytical methodology to maximize revenue and store efficiency using key performance indicators.', 
+        target: 'Target: 15% increase in Average Order Value (AOV).',
         details: [
-          'Track conversion rates per branch/staff.',
-          'Analyze and boost Average Order Value (AOV).',
+          'Track conversion rates per employee/branch.',
+          'Data-driven upselling and cross-selling tactics.',
           'Real-time KPI dashboard linking targets to actuals.'
         ],
         icon: '📈' 
@@ -145,10 +162,11 @@ const content = {
         id: 5, 
         title: 'IT AI Empowerment', 
         desc: '4-month intensive curriculum to turn IT into an AI Enablement Unit.', 
+        target: 'Target: 100% technical self-sufficiency.',
         details: [
-          'Prompt Engineering mastery.',
+          'Prompt Engineering mastery for business.',
           'Internal automation builds (n8n/Zapier).',
-          'AI Chatbots for employee support.'
+          'AI Chatbots for instant employee support.'
         ],
         icon: '💻' 
       },
@@ -156,6 +174,7 @@ const content = {
         id: 6, 
         title: 'Unified Task Management', 
         desc: 'Replacing WhatsApp chaos with structured, trackable task engines.', 
+        target: 'Target: 0% task loss across 30 stores.',
         details: [
           'Automated Morning Briefs for managers.',
           'Daily task tracking & audit trails.',
@@ -164,6 +183,13 @@ const content = {
         icon: '✅' 
       }
     ],
+    governanceTitle: 'Change Management & Adoption',
+    governanceItems: [
+      { title: 'System as the Truth', desc: 'Odoo becomes the single source of truth for all operational decisions.' },
+      { title: 'Incentive Alignment', desc: 'Staff bonuses linked directly to system task completion and data accuracy.' }
+    ],
+    expansionTitle: 'Future Expansion Readiness',
+    expansionText: 'This system is built as the "Core Infrastructure" for group growth. Once the Jewelry model is proven, it can be instantly replicated across the Cafe, Restaurant, and Hotel verticals to ensure unified management and ROI.',
     timeline: [
       { phase: 'Phase 1', task: 'Foundation & ZATCA Integration', date: 'Month 1' },
       { phase: 'Phase 2', task: 'Financial AI & Automation', date: 'Month 2-3' },
@@ -205,7 +231,7 @@ export default function PresentationPage() {
     },
     summaryBox: {
       backgroundColor: 'rgba(197, 160, 89, 0.1)',
-      border: '1px solid #c5a059',
+      border: '2px solid #c5a059',
       borderRadius: '24px',
       padding: '40px',
       margin: '0 5% 60px',
@@ -237,12 +263,43 @@ export default function PresentationPage() {
       position: 'relative',
       transition: 'all 0.3s ease'
     },
+    targetLine: {
+      backgroundColor: 'rgba(197, 160, 89, 0.15)',
+      color: '#c5a059',
+      padding: '8px 15px',
+      borderRadius: '10px',
+      fontSize: '0.9rem',
+      fontWeight: 'bold',
+      marginTop: '15px',
+      display: 'inline-block'
+    },
     detailList: {
       marginTop: '20px',
       padding: 0,
       listStyleType: 'none',
       fontSize: '0.95rem',
       color: '#cbd5e1'
+    },
+    sectionTitle: {
+      textAlign: 'center',
+      fontSize: '2.5rem',
+      color: '#c5a059',
+      marginTop: '100px',
+      marginBottom: '40px'
+    },
+    governanceGrid: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+      gap: '20px',
+      padding: '0 5%',
+      maxWidth: '1200px',
+      margin: '0 auto'
+    },
+    governanceCard: {
+      padding: '30px',
+      border: '1px dashed #c5a059',
+      borderRadius: '20px',
+      backgroundColor: 'rgba(255,255,255,0.02)'
     },
     timeline: {
       padding: '60px 5%',
@@ -292,8 +349,9 @@ export default function PresentationPage() {
         {t.pillars.map((p: any) => (
           <div key={p.id} style={styles.card}>
             <div style={{fontSize: '3.5rem', marginBottom: '20px'}}>{p.icon}</div>
-            <h3 style={{fontSize: '1.8rem', color: '#c5a059', marginBottom: '15px'}}>{p.title}</h3>
-            <p style={{lineHeight: 1.6, color: '#e2e8f0'}}>{p.desc}</p>
+            <h3 style={{fontSize: '1.8rem', color: '#c5a059', marginBottom: '5px'}}>{p.title}</h3>
+            <div style={styles.targetLine}>{p.target}</div>
+            <p style={{lineHeight: 1.6, color: '#e2e8f0', marginTop: '15px'}}>{p.desc}</p>
             <ul style={styles.detailList}>
               {p.details.map((d: string, i: number) => (
                 <li key={i} style={{marginBottom: '10px', display: 'flex', gap: '10px'}}>
@@ -303,6 +361,23 @@ export default function PresentationPage() {
             </ul>
           </div>
         ))}
+      </div>
+
+      <h2 style={styles.sectionTitle}>{t.governanceTitle}</h2>
+      <div style={styles.governanceGrid}>
+        {t.governanceItems.map((item: any, i: number) => (
+          <div key={i} style={styles.governanceCard}>
+            <h4 style={{color: '#c5a059', fontSize: '1.2rem', marginBottom: '10px'}}>{item.title}</h4>
+            <p style={{color: '#94a3b8'}}>{item.desc}</p>
+          </div>
+        ))}
+      </div>
+
+      <div style={{...styles.summaryBox, marginTop: '100px', borderStyle: 'dashed'}}>
+        <h2 style={{color: '#c5a059', marginBottom: '20px', fontSize: '2rem'}}>{t.expansionTitle}</h2>
+        <p style={{fontSize: '1.3rem', lineHeight: 1.6, color: '#cbd5e1'}}>
+          {t.expansionText}
+        </p>
       </div>
 
       <div style={styles.timeline}>
@@ -325,7 +400,7 @@ export default function PresentationPage() {
       </div>
 
       <footer style={{textAlign: 'center', marginTop: '80px', color: '#64748b'}}>
-        &copy; 2026 REMAT STRATEGIC SOLUTIONS | MADINAH RETAIL GROUP | VERSION 2.0
+        &copy; 2026 REMAT STRATEGIC SOLUTIONS | MADINAH RETAIL GROUP | VERSION 2.5
       </footer>
     </div>
   );
