@@ -10,17 +10,17 @@ const content = {
     summaryTitle: 'الملخص التنفيذي',
     summaryText: 'من خلال تنفيذ هذه الاستراتيجية، سنقوم بتحويل كل موظف إلى ما يعادل ٥ موظفين في موظف واحد. سنعمل على تعظيم الأرباح في المواقع الحالية ونكون مستعدين للتوسع في مشاريع جديدة بنظام محسن تم تصميمه لتحقيق أقصى قدر من الكفاءة والعائد على الاستثمار.',
     title: 'خارطة طريق التحول الرقمي والذكاء الاصطناعي',
-    subtitle: 'استراتيجية شاملة لـ ٣٠ فرعاً في المدينة المنورة - مجموعة مجوهرات الرفاهية',
+    subtitle: 'استراتيجية شاملة لـ +٣٠ فرعاً في المدينة المنورة - مجموعة مجوهرات الرفاهية',
     pillars: [
       { 
         id: 1, 
-        title: 'المحاسبة المتكاملة (الذكاء المالي)', 
-        desc: 'أتمتة الفواتير والمصروفات، التنبؤ بالتدفقات النقدية، والالتزام الكامل بالمرحلة الثانية من "زاتكا".', 
+        title: 'الربط المالي الذكي (تحسين إكسل وأودو)', 
+        desc: 'تسهيل العمليات المالية عبر أتمتة تدفق البيانات بين ملفات إكسل ونظام أودو، وضمان الالتزام الكامل بالمرحلة الثانية من "زاتكا".', 
         target: 'الهدف: تقليل إدخال البيانات اليدوي بنسبة ٧٠٪.',
         details: [
-          'أتمتة إدخال البيانات باستخدام تقنيات OCR.',
-          'لوحات معلومات لحظية بدلاً من ملفات إكسل.',
-          'الامتثال الكامل لمتطلبات هيئة الزكاة والدخل.'
+          'أتمتة استيراد البيانات من ملفات إكسل إلى أودو لتقليل الجهد البشري.',
+          'لوحات معلومات لحظية تدعم اتخاذ القرار وتتكامل مع أدواتكم الحالية.',
+          'الامتثال الكامل والسلس لمتطلبات هيئة الزكاة والدخل.'
         ],
         icon: '📊' 
       },
@@ -30,7 +30,7 @@ const content = {
         desc: 'ربط نظام "اكتفاء" بأداء المبيعات والتنبؤ باحتياجات التوظيف وتسرب الموظفين.', 
         target: 'الهدف: أتمتة تقييم الأداء بنسبة ١٠٠٪.',
         details: [
-          'تحسين الجدولة الذكية لـ ٣٠ فرعاً.',
+          'تحسين الجدولة الذكية لـ +٣٠ فرعاً.',
           'تحليلات التنبؤ بالاستقالات قبل حدوثها.',
           'نظام تقييم أداء آلي مرتبط بالمبيعات.'
         ],
@@ -91,7 +91,7 @@ const content = {
       { title: 'الحوافز المرتبطة بالأداء', desc: 'ربط المكافآت الشهرية بإكمال المهام وتحديث البيانات في النظام.' }
     ],
     expansionTitle: 'جاهزية التوسع المستقبلي',
-    expansionText: 'هذا النظام مصمم ليكون "البنية التحتية الأساسية" لنمو المجموعة. بعد نجاح نموذج المجوهرات، يمكن تعميم هذا النظام فوراً على قطاعات المقاهي، المطاعم، والفنادق التابعة للمجموعة لضمان وحدة الإدارة وجودة الأداء.',
+    expansionText: 'هذا النظام مصمم ليكون "البنية التحتية الأساسية" لنمو المجموعة. بعد نجاح نموذج المجوهرات، يمكن تعميم هذا النظام فوراً على قطاعات المقاهي، المطاعم، الفنادق، و"the concept" التابعة للمجموعة لضمان وحدة الإدارة وجودة الأداء.',
     timeline: [
       { phase: 'المرحلة ١', task: 'التأسيس وربط الأنظمة (ZATCA)', date: 'الشهر ١' },
       { phase: 'المرحلة ٢', task: 'تفعيل الذكاء المالي والأتمتة', date: 'الشهر ٢-٣' },
@@ -112,13 +112,13 @@ const content = {
     pillars: [
       { 
         id: 1, 
-        title: 'Integrated AI Accounting', 
-        desc: 'Automating invoices, predicting cash flow, and full ZATCA Phase 2 compliance.', 
+        title: 'Smart Financial Link (Excel & Odoo)', 
+        desc: 'Streamlining financial operations by automating data flow between Excel and Odoo, ensuring full ZATCA Phase 2 compliance.', 
         target: 'Target: 70% reduction in manual data entry.',
         details: [
-          'Automated data ingestion via OCR technology.',
-          'Real-time dashboards replacing Excel files.',
-          'Full compliance with Zakat & Tax Authority.'
+          'Automate data import from Excel to Odoo to reduce manual labor.',
+          'Real-time dashboards that augment your current tools for better decision making.',
+          'Seamless transition and full compliance with Zakat & Tax Authority.'
         ],
         icon: '📊' 
       },
@@ -128,7 +128,7 @@ const content = {
         desc: 'Linking Ektefa HRMS to sales performance and predicting staff attrition.', 
         target: 'Target: 100% automated performance scoring.',
         details: [
-          'Optimized scheduling for 30 locations.',
+          'Optimized scheduling for 30+ locations.',
           'Predictive analytics for staff retention.',
           'Performance scoring tied to real revenue.'
         ],
@@ -174,7 +174,7 @@ const content = {
         id: 6, 
         title: 'Unified Task Management', 
         desc: 'Replacing WhatsApp chaos with structured, trackable task engines.', 
-        target: 'Target: 0% task loss across 30 stores.',
+        target: 'Target: 0% task loss across 30+ stores.',
         details: [
           'Automated Morning Briefs for managers.',
           'Daily task tracking & audit trails.',
@@ -185,11 +185,11 @@ const content = {
     ],
     governanceTitle: 'Change Management & Adoption',
     governanceItems: [
-      { title: 'System as the Truth', desc: 'Odoo becomes the single source of truth for all operational decisions.' },
+      { title: 'Augmented Workflow', desc: 'Focusing on making existing Excel workflows faster and safer rather than a forced replacement.' },
       { title: 'Incentive Alignment', desc: 'Staff bonuses linked directly to system task completion and data accuracy.' }
     ],
     expansionTitle: 'Future Expansion Readiness',
-    expansionText: 'This system is built as the "Core Infrastructure" for group growth. Once the Jewelry model is proven, it can be instantly replicated across the Cafe, Restaurant, and Hotel verticals to ensure unified management and ROI.',
+    expansionText: 'This system is built as the "Core Infrastructure" for group growth. Once the Jewelry model is proven, it can be instantly replicated across the cafe, restaurant, hotel, and the concept sectors to ensure unified management and ROI.',
     timeline: [
       { phase: 'Phase 1', task: 'Foundation & ZATCA Integration', date: 'Month 1' },
       { phase: 'Phase 2', task: 'Financial AI & Automation', date: 'Month 2-3' },
@@ -231,7 +231,7 @@ export default function PresentationPage() {
     },
     summaryBox: {
       backgroundColor: 'rgba(197, 160, 89, 0.1)',
-      border: '2px solid #c5a059',
+      border: '1px solid #c5a059',
       borderRadius: '24px',
       padding: '40px',
       margin: '0 5% 60px',
@@ -400,7 +400,7 @@ export default function PresentationPage() {
       </div>
 
       <footer style={{textAlign: 'center', marginTop: '80px', color: '#64748b'}}>
-        &copy; 2026 REMAT STRATEGIC SOLUTIONS | MADINAH RETAIL GROUP | VERSION 2.5
+        &copy; 2026 REMAT STRATEGIC SOLUTIONS | MADINAH RETAIL GROUP | VERSION 2.8
       </footer>
     </div>
   );
