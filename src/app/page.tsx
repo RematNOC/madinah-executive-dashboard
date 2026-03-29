@@ -16,7 +16,7 @@ const content = {
         id: 1, 
         title: 'الربط المالي الذكي (تحسين إكسل وأودو)', 
         desc: 'تسهيل العمليات المالية عبر أتمتة تدفق البيانات بين ملفات إكسل ونظام أودو، وضمان الالتزام الكامل بالمرحلة الثانية من "زاتكا".', 
-        target: 'الهدف: تقليل إدخال البيانات اليدوي بنسبة ٧٠٪.',
+        target: 'الهدف: تقليل إدخال البيانات اليدوي بنسبة ٥٠٪.',
         details: [
           'أتمتة استيراد البيانات من ملفات إكسل إلى أودو لتقليل الجهد البشري.',
           'لوحات معلومات لحظية تدعم اتخاذ القرار وتتكامل مع أدواتكم الحالية.',
@@ -27,12 +27,12 @@ const content = {
       { 
         id: 2, 
         title: 'الموارد البشرية الذكية (HR 2.0)', 
-        desc: 'ربط نظام "اكتفاء" بأداء المبيعات والتنبؤ باحتياجات التوظيف وتسرب الموظفين.', 
+        desc: 'نظام "الإنذار المبكر" للتنبؤ بتسرب الموظفين وتحسين الجدولة بناءً على أداء المبيعات.', 
         target: 'الهدف: أتمتة تقييم الأداء بنسبة ١٠٠٪.',
         details: [
-          'تحسين الجدولة الذكية لـ +٣٠ فرعاً.',
-          'تحليلات التنبؤ بالاستقالات قبل حدوثها.',
-          'نظام تقييم أداء آلي مرتبط بالمبيعات.'
+          'تحليل "إشارات الاحتراق الوظيفي" (تغيرات الحضور، تراجع الأداء).',
+          'درجة "مخاطر المغادرة" (Flight Risk Score) لكل موظف أساسي.',
+          'توصيات آلية للمكافآت أو فترات الراحة لمنع استقالة المبدعين.'
         ],
         icon: '👥' 
       },
@@ -87,7 +87,7 @@ const content = {
     ],
     governanceTitle: 'إدارة التغيير والتبني',
     governanceItems: [
-      { title: 'سياسة "النظام هو الحقيقة"', desc: 'اعتبار نظام أودو المرجع الوحيد والنهائي للقرارات والتقارير.' },
+      { title: 'سير عمل "معزز"', desc: 'التركيز على جعل عمليات إكسل الحالية أسرع وأكثر أماناً بدلاً من فرض الاستبدال الكلي.' },
       { title: 'الحوافز المرتبطة بالأداء', desc: 'ربط المكافآت الشهرية بإكمال المهام وتحديث البيانات في النظام.' }
     ],
     expansionTitle: 'جاهزية التوسع المستقبلي',
@@ -114,7 +114,7 @@ const content = {
         id: 1, 
         title: 'Smart Financial Link (Excel & Odoo)', 
         desc: 'Streamlining financial operations by automating data flow between Excel and Odoo, ensuring full ZATCA Phase 2 compliance.', 
-        target: 'Target: 70% reduction in manual data entry.',
+        target: 'Target: 50% reduction in manual data entry.',
         details: [
           'Automate data import from Excel to Odoo to reduce manual labor.',
           'Real-time dashboards that augment your current tools for better decision making.',
@@ -125,12 +125,12 @@ const content = {
       { 
         id: 2, 
         title: 'Smart HR Management', 
-        desc: 'Linking Ektefa HRMS to sales performance and predicting staff attrition.', 
+        desc: 'Early-warning system to predict staff attrition and optimize scheduling based on sales performance.', 
         target: 'Target: 100% automated performance scoring.',
         details: [
-          'Optimized scheduling for 30+ locations.',
-          'Predictive analytics for staff retention.',
-          'Performance scoring tied to real revenue.'
+          'Analysis of "Burnout Signals" (attendance drift, performance plateau).',
+          'Predictive "Flight Risk Score" for every key employee.',
+          'Automated retention nudges (bonuses/breaks) for star performers.'
         ],
         icon: '👥' 
       },
