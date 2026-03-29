@@ -6,6 +6,7 @@ const content = {
     dir: 'rtl',
     lang: 'English',
     nav: 'AR',
+    brand: 'استراتيجية إدارة العمليات',
     title: 'خارطة طريق التحول الرقمي والذكاء الاصطناعي',
     subtitle: 'استراتيجية شاملة لـ ٣٠ فرعاً في المدينة المنورة - مجموعة مجوهرات الرفاهية',
     pillars: [
@@ -44,6 +45,17 @@ const content = {
       },
       { 
         id: 4, 
+        title: 'استراتيجيات أداء المبيعات و KPIs', 
+        desc: 'منهجية تحليلية لتعظيم الإيرادات وتحسين كفاءة الفروع باستخدام مؤشرات الأداء الرئيسية.', 
+        details: [
+          'تتبع معدل التحويل (Conversion Rate) لكل فرع.',
+          'تحليل متوسط قيمة السلة (AOV) ورفعها عبر الـ Upselling.',
+          'لوحة مؤشرات أداء لحظية تربط الأهداف بالنتائج الفعلية.'
+        ],
+        icon: '📈' 
+      },
+      { 
+        id: 5, 
         title: 'تمكين فريق تقنية المعلومات', 
         desc: 'تدريب مكثف لمدة ٤ أشهر لتحويل القسم من دعم فني إلى وحدة ابتكار وذكاء اصطناعي.', 
         details: [
@@ -54,7 +66,7 @@ const content = {
         icon: '💻' 
       },
       { 
-        id: 5, 
+        id: 6, 
         title: 'إدارة المهام الموحدة (Comms)', 
         desc: 'إنهاء فوضى الواتساب واستبدالها بنظام مهام مهيكل يضمن عدم ضياع أي تعليمات.', 
         details: [
@@ -77,6 +89,7 @@ const content = {
     dir: 'ltr',
     lang: 'العربية',
     nav: 'EN',
+    brand: 'OPERATIONS MANAGEMENT STRATEGY',
     title: 'AI & Digital Transformation Roadmap',
     subtitle: 'Strategic Overhaul for 30+ Madinah Storefronts - Luxury Jewelry Group',
     pillars: [
@@ -115,6 +128,17 @@ const content = {
       },
       { 
         id: 4, 
+        title: 'Sales Performance & KPIs', 
+        desc: 'Analytical methodology to maximize revenue and store efficiency using key performance indicators.', 
+        details: [
+          'Track conversion rates per branch/staff.',
+          'Analyze and boost Average Order Value (AOV).',
+          'Real-time KPI dashboard linking targets to actuals.'
+        ],
+        icon: '📈' 
+      },
+      { 
+        id: 5, 
         title: 'IT AI Empowerment', 
         desc: '4-month intensive curriculum to turn IT into an AI Enablement Unit.', 
         details: [
@@ -125,7 +149,7 @@ const content = {
         icon: '💻' 
       },
       { 
-        id: 5, 
+        id: 6, 
         title: 'Unified Task Management', 
         desc: 'Replacing WhatsApp chaos with structured, trackable task engines.', 
         details: [
@@ -217,8 +241,8 @@ export default function PresentationPage() {
   return (
     <div dir={t.dir} style={styles.container}>
       <nav style={styles.nav}>
-        <div style={{fontWeight: '900', fontSize: '1.5rem', color: '#c5a059', letterSpacing: '-1px'}}>
-          REMAT <span style={{color: 'white'}}>STRATEGY</span>
+        <div style={{fontWeight: '900', fontSize: '1.2rem', color: '#c5a059', letterSpacing: '1px', textTransform: 'uppercase'}}>
+          {t.brand}
         </div>
         <button 
           onClick={() => setLang(lang === 'ar' ? 'en' : 'ar')}
@@ -279,7 +303,7 @@ export default function PresentationPage() {
       </div>
 
       <footer style={{textAlign: 'center', marginTop: '80px', color: '#64748b'}}>
-        &copy; 2026 REMAT STRATEGIC SOLUTIONS | MADINAH RETAIL GROUP | VERSION 1.5
+        &copy; 2026 REMAT STRATEGIC SOLUTIONS | MADINAH RETAIL GROUP | VERSION 1.8
       </footer>
     </div>
   );
