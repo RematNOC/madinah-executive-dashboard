@@ -14,13 +14,13 @@ const content = {
     pillars: [
       { 
         id: 1, 
-        title: 'الربط المالي الذكي (تحسين إكسل وأودو)', 
-        desc: 'تسهيل العمليات المالية عبر أتمتة تدفق البيانات بين ملفات إكسل ونظام أودو، وضمان الالتزام الكامل بالمرحلة الثانية من "زاتكا".', 
-        target: 'الهدف: تقليل إدخال البيانات اليدوي بنسبة ٥٠٪.',
+        title: 'التطور المالي (جسر إكسل إلى الذكاء الاصطناعي)', 
+        desc: 'الانتقال المنهجي من الجداول اليدوية إلى منظومة مالية مستقلة بالكامل، مع تفعيل "جسر ربط" في المرحلة الانتقالية لضمان استمرارية العمل والالتزام بـ "زاتكا".', 
+        target: 'الهدف: تقليل العمل اليدوي بنسبة ٥٠٪ (مرحلياً) وصولاً للأتمتة الكاملة.',
         details: [
-          'أتمتة استيراد البيانات من ملفات إكسل إلى أودو لتقليل الجهد البشري.',
-          'لوحات معلومات لحظية تدعم اتخاذ القرار وتتكامل مع أدواتكم الحالية.',
-          'الامتثال الكامل والسلس لمتطلبات هيئة الزكاة والدخل.'
+          'المرحلة الانتقالية: "جسر آلي" لربط ملفات إكسل الحالية بنظام أودو لتقليل الخطأ البشري.',
+          'الرؤية المستقبلية: الاستبدال الكامل لإكسل بسير عمل ذكي يعالج البيانات بشكل تلقائي ولحظي.',
+          'بنية تحتية دائمة للامتثال للمرحلة الثانية من هيئة الزكاة والدخل.'
         ],
         icon: '📊' 
       },
@@ -87,15 +87,15 @@ const content = {
     ],
     governanceTitle: 'إدارة التغيير والتبني',
     governanceItems: [
-      { title: 'سير عمل "معزز"', desc: 'التركيز على جعل عمليات إكسل الحالية أسرع وأكثر أماناً بدلاً من فرض الاستبدال الكلي.' },
+      { title: 'التحول المرحلي المدروس', desc: 'استخدام "جسر إكسل" في المرحلة الأولى لتسهيل التبني، مع التوجه نحو الاستغناء الكامل عن الجداول اليدوية مستقبلاً.' },
       { title: 'الحوافز المرتبطة بالأداء', desc: 'ربط المكافآت الشهرية بإكمال المهام وتحديث البيانات في النظام.' }
     ],
     expansionTitle: 'جاهزية التوسع المستقبلي',
     expansionText: 'هذا النظام مصمم ليكون "البنية التحتية الأساسية" لنمو المجموعة. بعد نجاح نموذج المجوهرات، يمكن تعميم هذا النظام فوراً على قطاعات المقاهي، المطاعم، الفنادق، و"the concept" التابعة للمجموعة لضمان وحدة الإدارة وجودة الأداء.',
     timeline: [
-      { phase: 'المرحلة ١', task: 'التأسيس وربط الأنظمة (ZATCA)', date: 'الشهر ١' },
-      { phase: 'المرحلة ٢', task: 'تفعيل الذكاء المالي والأتمتة', date: 'الشهر ٢-٣' },
-      { phase: 'المرحلة ٣', task: 'إطلاق الـ O2O وتدريب الفريق', date: 'الشهر ٤-٦' }
+      { phase: 'المرحلة ١', task: 'التأسيس، ربط زاتكا، وتفعيل جسر إكسل', date: 'الشهر ١' },
+      { phase: 'المرحلة ٢', task: 'تفعيل الذكاء المالي وبدء الاستغناء عن الجداول', date: 'الشهر ٢-٣' },
+      { phase: 'المرحلة ٣', task: 'الأتمتة الكاملة، إطلاق الـ O2O وتدريب الفريق', date: 'الشهر ٤-٦' }
     ],
     cta: 'ابدأ التحول الآن',
     vision: 'رؤية ٢٠٣٠'
@@ -112,13 +112,13 @@ const content = {
     pillars: [
       { 
         id: 1, 
-        title: 'Smart Financial Link (Excel & Odoo)', 
-        desc: 'Streamlining financial operations by automating data flow between Excel and Odoo, ensuring full ZATCA Phase 2 compliance.', 
-        target: 'Target: 50% reduction in manual data entry.',
+        title: 'Financial Evolution (Excel-to-AI Bridge)', 
+        desc: 'A systematic transition from manual spreadsheets to a fully autonomous AI financial ecosystem, utilizing a "Smart Bridge" during the transition for ZATCA compliance.', 
+        target: 'Target: 50% phased reduction in manual work, moving toward 100% automation.',
         details: [
-          'Automate data import from Excel to Odoo to reduce manual labor.',
-          'Real-time dashboards that augment your current tools for better decision making.',
-          'Seamless transition and full compliance with Zakat & Tax Authority.'
+          'Transitional Phase: Automated bridge to sync current Excel workflows with Odoo.',
+          'Long-term Vision: Full replacement of Excel with autonomous, real-time AI accounting.',
+          'Permanent infrastructure for full Zakat & Tax Authority (ZATCA) Phase 2 compliance.'
         ],
         icon: '📊' 
       },
@@ -185,15 +185,15 @@ const content = {
     ],
     governanceTitle: 'Change Management & Adoption',
     governanceItems: [
-      { title: 'Augmented Workflow', desc: 'Focusing on making existing Excel workflows faster and safer rather than a forced replacement.' },
+      { title: 'Phased Migration', desc: 'Focusing on the "Excel Bridge" to ensure zero disruption before moving to full Excel replacement.' },
       { title: 'Incentive Alignment', desc: 'Staff bonuses linked directly to system task completion and data accuracy.' }
     ],
     expansionTitle: 'Future Expansion Readiness',
     expansionText: 'This system is built as the "Core Infrastructure" for group growth. Once the Jewelry model is proven, it can be instantly replicated across the cafe, restaurant, hotel, and the concept sectors to ensure unified management and ROI.',
     timeline: [
-      { phase: 'Phase 1', task: 'Foundation & ZATCA Integration', date: 'Month 1' },
-      { phase: 'Phase 2', task: 'Financial AI & Automation', date: 'Month 2-3' },
-      { phase: 'Phase 3', task: 'O2O Launch & IT Certification', date: 'Month 4-6' }
+      { phase: 'Phase 1', task: 'ZATCA Integration & Excel Bridge Activation', date: 'Month 1' },
+      { phase: 'Phase 2', task: 'Financial AI Launch & Phasing out Manual Sheets', date: 'Month 2-3' },
+      { phase: 'Phase 3', task: 'Full AI Autonomy, O2O Launch & IT Certification', date: 'Month 4-6' }
     ],
     cta: 'Start Transformation',
     vision: 'Vision 2030'
@@ -400,7 +400,7 @@ export default function PresentationPage() {
       </div>
 
       <footer style={{textAlign: 'center', marginTop: '80px', color: '#64748b'}}>
-        &copy; 2026 REMAT STRATEGIC SOLUTIONS | MADINAH RETAIL GROUP | VERSION 2.8
+        &copy; 2026 REMAT STRATEGIC SOLUTIONS | MADINAH RETAIL GROUP | VERSION 3.2
       </footer>
     </div>
   );
