@@ -38,11 +38,11 @@ const content = {
 
 export default function PresentationPage() {
   const [lang, setLang] = useState('ar');
-  const t = content[lang];
+  const t = (content as any)[lang];
 
-  const styles = {
+  const styles: {[key: string]: React.CSSProperties} = {
     container: {
-      minHeight: '100-vh',
+      minHeight: '100vh',
       backgroundColor: '#001a33',
       color: 'white',
       fontFamily: 'sans-serif',
@@ -92,7 +92,7 @@ export default function PresentationPage() {
       </div>
 
       <div style={styles.grid}>
-        {t.pillars.map((p) => (
+        {t.pillars.map((p: any) => (
           <div key={p.id} style={styles.card}>
             <div style={{fontSize: '3rem'}}>{p.icon}</div>
             <h3 style={{color: '#c5a059'}}>{p.title}</h3>
